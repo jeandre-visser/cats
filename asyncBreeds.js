@@ -8,7 +8,7 @@ const breedDetailsFromFile = function(breed, callbackFunctionToRunWhenThingsAreD
     // ISSUE: Returning from *inner* callback function, not breedDetailsFromFile.
      // CHANGE: Pass data into callback instead of returning it directly
     if (!error) callbackFunctionToRunWhenThingsAreDone(data);
-    if (error) callbackFunctionToRunWhenThingsAreDone(undefined)
+    if (error) callbackFunctionToRunWhenThingsAreDone(undefined);
   });
   // ISSUE: Attempting to return data out here will also not work.
   //        Currently not returning anything from here, so breedDetailsFromFile function returns undefined.
